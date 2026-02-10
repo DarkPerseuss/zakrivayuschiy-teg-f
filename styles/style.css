@@ -10,11 +10,13 @@
 
 */
 
+
+
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-family-Inter);
-  font-variation-settings: 'wght' var(--font-weight-inter-normal);
+  font-variation-settings: "wght" var(--font-weight-inter-normal);
   background-image: var(--gradient);
   background-attachment: fixed;
   background-size: cover;
@@ -22,7 +24,7 @@
 
 .header {
   inline-size: var(--block-width);
-  background: #FFFFFF;
+  background: #ffffff;
   margin-block: 100px;
   margin-inline: auto;
   padding-inline: var(--header-padding-inline);
@@ -52,31 +54,34 @@
 .main__block {
   display: grid;
   gap: 50px;
+  margin: 0 auto;
 }
 
 .card {
   inline-size: var(--block-width);
   border: var(--border);
   background-color: #fff;
+  margin-inline: auto;
 }
 
 .card__title {
   font-variation-settings: "wght" 715;
+  font-weight: 715;
   font-size: 18px;
-  padding-inline: 10px;
-  padding-block: 5px;
+  padding-inline: clamp(0.625rem, 0.625rem + 0vw, 0.625rem);
+  padding-block: clamp(0.25rem, 0.25rem + 0vw, 0.25rem);
 }
 
 .card__img-block {
   position: relative;
   display: flex;
+  border-top: var(--border);
+  border-bottom: var(--border);
 }
 
 .card__img {
-  border-top: var(--border);
-  border-bottom: var(--border);
-  height: 375px;
-  width: 371px;
+  width: 100%;
+  aspect-ratio: 1/1;
 }
 
 .card__label {
@@ -89,13 +94,16 @@
   mix-blend-mode: hard-light;
   color: rgb(0 0 0 / 0.5);
   text-shadow:
-  -1px 0 var(--color-shadow), 
-  0 1px var(--color-shadow), 
-  1px 0 var(--color-shadow), 
-  0 -1px var(--color-shadow);
+    -1px 0 var(--color-shadow),
+    0 1px var(--color-shadow),
+    1px 0 var(--color-shadow),
+    0 -1px var(--color-shadow);
 }
 
-@supports((text-stroke: 1px var(--color-shadow)) or (-webkit-text-stroke: 1px var(--color-shadow))) {
+@supports (
+  (text-stroke: 1px var(--color-shadow)) or
+    (-webkit-text-stroke: 1px var(--color-shadow))
+) {
   .card__label {
     -webkit-text-stroke: 1px var(--color-shadow);
     text-stroke: 1px var(--color-shadow);
@@ -104,19 +112,22 @@
 }
 
 .card__description-block {
-  font-size: 18px;
-  line-height: 21px;
-  margin: 25px;
-  display: grid;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
   gap: 25px;
+}
+
+.card__description-text {
   font-variation-settings: "wght" 410;
+  font-size: 18px;
+  line-height: 117%;
 }
 
 .card__button-block {
   display: flex;
   gap: 6px;
   justify-content: end;
-  margin: 25px;
 }
 
 .card__icon-button {
