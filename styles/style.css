@@ -48,10 +48,15 @@
   text-wrap: nowrap;
 }
 
-.main__block {
+.main {
   display: grid;
   gap: 50px;
   padding-bottom: 100px;
+}
+
+.main__block {
+  display: grid;
+  gap: 50px;
 }
 
 .card {
@@ -195,7 +200,7 @@ dialog::backdrop {
   flex-shrink: 0;
 }
 
-.dialog .main__block-save .button__text {
+.dialog .button__text {
   line-height: 150%;
   text-transform: uppercase;
 }
