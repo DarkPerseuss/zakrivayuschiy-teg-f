@@ -43,9 +43,9 @@
               <img
                 src="./images/friends.jpg"
                 alt="work friends"
-                class="card__img"
+                class="card__img work-friends"
               />
-              <span class="card__label">&lt;/HTML&gt;</span>
+              <span class="card__label">team</span>
             </div>
             <div class="card__description-block">
               <p class="card__description-text">
@@ -54,41 +54,48 @@
                 подумать, как новые знания могут повлиять на ваше будущее.
               </p>
               <p class="card__description-text">
-                Место для ваших воспоминаний о начале обучения.
+                Уже в самом начале спринта нашлись целеустремленные люди, с
+                которыми сформировалась команда для будущих самостоятельных
+                проектов.
               </p>
               <div class="card__button-block">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
-                    width="27"
-                    height="24"
-                    viewBox="0 0 27 24"
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M6 0H3V3H6V0Z" fill="black" />
-                    <path d="M9 0H6V3H9V0Z" fill="black" />
-                    <path d="M3 3H0V6H3V3Z" fill="black" />
-                    <path d="M3 6H0V9H3V6Z" fill="black" />
-                    <path d="M3 9H0V12H3V9Z" fill="black" />
-                    <path d="M12 0H9V3H12V0Z" fill="black" />
-                    <path d="M6 12H3V15H6V12Z" fill="black" />
-                    <path d="M9 15H6V18H9V15Z" fill="black" />
-                    <path d="M12 18H9V21H12V18Z" fill="black" />
-                    <path d="M21 0H24V3H21V0Z" fill="black" />
-                    <path d="M18 0H21V3H18V0Z" fill="black" />
-                    <path d="M24 3H27V6H24V3Z" fill="black" />
-                    <path d="M24 6H27V9H24V6Z" fill="black" />
-                    <path d="M24 9H27V12H24V9Z" fill="black" />
-                    <path d="M15 0H18V3H15V0Z" fill="black" />
-                    <path d="M21 12H24V15H21V12Z" fill="black" />
-                    <path d="M18 15H21V18H18V15Z" fill="black" />
-                    <path d="M15 18H18V21H15V18Z" fill="black" />
-                    <path d="M15 3H12V6H15V3Z" fill="black" />
-                    <path d="M15 21H12V24H15V21Z" fill="black" />
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--color-contour)"
+                      />
+
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--animation-fill-color)"
+                    />
                   </svg>
                 </button>
-                <button class="card__like-button">
-                  <p class="button__text">Like</p>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
@@ -98,8 +105,12 @@
           <article class="card">
             <h2 class="card__title">1 спринт: Я — чистый лист</h2>
             <div class="card__img-block">
-              <img src="./images/image2.png" alt="" class="card__img" />
-              <span class="card__label">&lt;/HTML&gt;</span>
+              <img
+                src="./images/sunset.jpg"
+                alt="sunset"
+                class="card__img sunset"
+              />
+              <span class="card__label">начало конца</span>
             </div>
             <div class="card__description-block">
               <p class="card__description-text">
@@ -111,42 +122,48 @@
                 я не справлюсь?
               </p>
               <p class="card__description-text">
-                Место для ваших воспоминаний о начале первого спринта.
+                Первая работа - самая тяжелая, до самого последнего момента
+                чувстовалась не уверенность в правильности своих действий.
               </p>
 
               <div class="card__button-block">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
-                    width="27"
-                    height="24"
-                    viewBox="0 0 27 24"
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M6 0H3V3H6V0Z" fill="black" />
-                    <path d="M9 0H6V3H9V0Z" fill="black" />
-                    <path d="M3 3H0V6H3V3Z" fill="black" />
-                    <path d="M3 6H0V9H3V6Z" fill="black" />
-                    <path d="M3 9H0V12H3V9Z" fill="black" />
-                    <path d="M12 0H9V3H12V0Z" fill="black" />
-                    <path d="M6 12H3V15H6V12Z" fill="black" />
-                    <path d="M9 15H6V18H9V15Z" fill="black" />
-                    <path d="M12 18H9V21H12V18Z" fill="black" />
-                    <path d="M21 0H24V3H21V0Z" fill="black" />
-                    <path d="M18 0H21V3H18V0Z" fill="black" />
-                    <path d="M24 3H27V6H24V3Z" fill="black" />
-                    <path d="M24 6H27V9H24V6Z" fill="black" />
-                    <path d="M24 9H27V12H24V9Z" fill="black" />
-                    <path d="M15 0H18V3H15V0Z" fill="black" />
-                    <path d="M21 12H24V15H21V12Z" fill="black" />
-                    <path d="M18 15H21V18H18V15Z" fill="black" />
-                    <path d="M15 18H18V21H15V18Z" fill="black" />
-                    <path d="M15 3H12V6H15V3Z" fill="black" />
-                    <path d="M15 21H12V24H15V21Z" fill="black" />
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--color-contour)"
+                      />
+
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--animation-fill-color)"
+                    />
                   </svg>
                 </button>
-                <button class="card__like-button">
-                  <p class="button__text">Like</p>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
@@ -156,8 +173,12 @@
           <article class="card">
             <h2 class="card__title">1 спринт: А если не получится?</h2>
             <div class="card__img-block">
-              <img src="./images/image2.png" alt="" class="card__img" />
-              <span class="card__label">&lt;/HTML&gt;</span>
+              <img
+                src="./images/happy.jpg"
+                alt="happy"
+                class="card__img happy"
+              />
+              <span class="card__label">happy</span>
             </div>
             <div class="card__description-block">
               <p class="card__description-text">
@@ -166,42 +187,48 @@
                 Или вы, наоборот, могли вдохновиться успехами и поверить в себя.
               </p>
               <p class="card__description-text">
-                Место для ваших воспоминаний об окончании первого спринта.
+                После ревью оказалось, что все было не так ужасно, как я себе
+                представлял, и от этого испытывал нескончаемую радость.
               </p>
 
               <div class="card__button-block">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
-                    width="27"
-                    height="24"
-                    viewBox="0 0 27 24"
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M6 0H3V3H6V0Z" fill="black" />
-                    <path d="M9 0H6V3H9V0Z" fill="black" />
-                    <path d="M3 3H0V6H3V3Z" fill="black" />
-                    <path d="M3 6H0V9H3V6Z" fill="black" />
-                    <path d="M3 9H0V12H3V9Z" fill="black" />
-                    <path d="M12 0H9V3H12V0Z" fill="black" />
-                    <path d="M6 12H3V15H6V12Z" fill="black" />
-                    <path d="M9 15H6V18H9V15Z" fill="black" />
-                    <path d="M12 18H9V21H12V18Z" fill="black" />
-                    <path d="M21 0H24V3H21V0Z" fill="black" />
-                    <path d="M18 0H21V3H18V0Z" fill="black" />
-                    <path d="M24 3H27V6H24V3Z" fill="black" />
-                    <path d="M24 6H27V9H24V6Z" fill="black" />
-                    <path d="M24 9H27V12H24V9Z" fill="black" />
-                    <path d="M15 0H18V3H15V0Z" fill="black" />
-                    <path d="M21 12H24V15H21V12Z" fill="black" />
-                    <path d="M18 15H21V18H18V15Z" fill="black" />
-                    <path d="M15 18H18V21H15V18Z" fill="black" />
-                    <path d="M15 3H12V6H15V3Z" fill="black" />
-                    <path d="M15 21H12V24H15V21Z" fill="black" />
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--color-contour)"
+                      />
+
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--animation-fill-color)"
+                    />
                   </svg>
                 </button>
-                <button class="card__like-button">
-                  <p class="button__text">Like</p>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
@@ -211,8 +238,12 @@
           <article class="card">
             <h2 class="card__title">2 спринт: Погоня за идеалом</h2>
             <div class="card__img-block">
-              <img src="./images/image2.png" alt="" class="card__img" />
-              <span class="card__label">&lt;/HTML&gt;</span>
+              <img
+                src="./images/speedrun.jpg"
+                alt="hardwork"
+                class="card__img speed-run"
+              />
+              <span class="card__label">speedrun</span>
             </div>
             <div class="card__description-block">
               <p class="card__description-text">
@@ -223,42 +254,48 @@
                 сделать идеально, старались просто сделать.
               </p>
               <p class="card__description-text">
-                Место для ваших воспоминаний о начале второго спринта.
+                В начале второго спринта с командой выбрали большой макет и
+                договорились заспидранить спринт, чтобы уделить время проекту.
               </p>
 
               <div class="card__button-block">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
-                    width="27"
-                    height="24"
-                    viewBox="0 0 27 24"
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M6 0H3V3H6V0Z" fill="black" />
-                    <path d="M9 0H6V3H9V0Z" fill="black" />
-                    <path d="M3 3H0V6H3V3Z" fill="black" />
-                    <path d="M3 6H0V9H3V6Z" fill="black" />
-                    <path d="M3 9H0V12H3V9Z" fill="black" />
-                    <path d="M12 0H9V3H12V0Z" fill="black" />
-                    <path d="M6 12H3V15H6V12Z" fill="black" />
-                    <path d="M9 15H6V18H9V15Z" fill="black" />
-                    <path d="M12 18H9V21H12V18Z" fill="black" />
-                    <path d="M21 0H24V3H21V0Z" fill="black" />
-                    <path d="M18 0H21V3H18V0Z" fill="black" />
-                    <path d="M24 3H27V6H24V3Z" fill="black" />
-                    <path d="M24 6H27V9H24V6Z" fill="black" />
-                    <path d="M24 9H27V12H24V9Z" fill="black" />
-                    <path d="M15 0H18V3H15V0Z" fill="black" />
-                    <path d="M21 12H24V15H21V12Z" fill="black" />
-                    <path d="M18 15H21V18H18V15Z" fill="black" />
-                    <path d="M15 18H18V21H15V18Z" fill="black" />
-                    <path d="M15 3H12V6H15V3Z" fill="black" />
-                    <path d="M15 21H12V24H15V21Z" fill="black" />
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--color-contour)"
+                      />
+
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--animation-fill-color)"
+                    />
                   </svg>
                 </button>
-                <button class="card__like-button">
-                  <p class="button__text">Like</p>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
@@ -268,8 +305,12 @@
           <article class="card">
             <h2 class="card__title">2 спринт: О тех, кто рядом</h2>
             <div class="card__img-block">
-              <img src="./images/image2.png" alt="" class="card__img" />
-              <span class="card__label">&lt;/HTML&gt;</span>
+              <img
+                src="./images/confidence.jpg"
+                alt="confidence"
+                class="card__img confidence"
+              />
+              <span class="card__label">уверенность</span>
             </div>
             <div class="card__description-block">
               <p class="card__description-text">
@@ -281,42 +322,48 @@
                 единомышленники, не правда ли?
               </p>
               <p class="card__description-text">
-                Место для ваших воспоминаний об окончании второго спринта.
+                В конце второго спринта уже чувстовался значительный прогресс в
+                написании верстки.
               </p>
 
               <div class="card__button-block">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
-                    width="27"
-                    height="24"
-                    viewBox="0 0 27 24"
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M6 0H3V3H6V0Z" fill="black" />
-                    <path d="M9 0H6V3H9V0Z" fill="black" />
-                    <path d="M3 3H0V6H3V3Z" fill="black" />
-                    <path d="M3 6H0V9H3V6Z" fill="black" />
-                    <path d="M3 9H0V12H3V9Z" fill="black" />
-                    <path d="M12 0H9V3H12V0Z" fill="black" />
-                    <path d="M6 12H3V15H6V12Z" fill="black" />
-                    <path d="M9 15H6V18H9V15Z" fill="black" />
-                    <path d="M12 18H9V21H12V18Z" fill="black" />
-                    <path d="M21 0H24V3H21V0Z" fill="black" />
-                    <path d="M18 0H21V3H18V0Z" fill="black" />
-                    <path d="M24 3H27V6H24V3Z" fill="black" />
-                    <path d="M24 6H27V9H24V6Z" fill="black" />
-                    <path d="M24 9H27V12H24V9Z" fill="black" />
-                    <path d="M15 0H18V3H15V0Z" fill="black" />
-                    <path d="M21 12H24V15H21V12Z" fill="black" />
-                    <path d="M18 15H21V18H18V15Z" fill="black" />
-                    <path d="M15 18H18V21H15V18Z" fill="black" />
-                    <path d="M15 3H12V6H15V3Z" fill="black" />
-                    <path d="M15 21H12V24H15V21Z" fill="black" />
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--color-contour)"
+                      />
+
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--animation-fill-color)"
+                    />
                   </svg>
                 </button>
-                <button class="card__like-button">
-                  <p class="button__text">Like</p>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
@@ -326,8 +373,12 @@
           <article class="card">
             <h2 class="card__title">3 спринт: Обходные стратегии</h2>
             <div class="card__img-block">
-              <img src="./images/image2.png" alt="" class="card__img" />
-              <span class="card__label">&lt;/HTML&gt;</span>
+              <img
+                src="./images/difficult.jpg"
+                alt="difficult"
+                class="card__img difficult"
+              />
+              <span class="card__label">hard work</span>
             </div>
             <div class="card__description-block">
               <p class="card__description-text">
@@ -336,42 +387,49 @@
                 пришло время посмотреть на задачу под другим углом.
               </p>
               <p class="card__description-text">
-                Место для ваших воспоминаний о начале третьего спринта.
+                До начала спринта немного работал с адаптивом и мне он казался
+                непонятным и сложным, были мысли, что спринт будет карйне
+                тяжелым.
               </p>
 
               <div class="card__button-block">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
-                    width="27"
-                    height="24"
-                    viewBox="0 0 27 24"
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M6 0H3V3H6V0Z" fill="black" />
-                    <path d="M9 0H6V3H9V0Z" fill="black" />
-                    <path d="M3 3H0V6H3V3Z" fill="black" />
-                    <path d="M3 6H0V9H3V6Z" fill="black" />
-                    <path d="M3 9H0V12H3V9Z" fill="black" />
-                    <path d="M12 0H9V3H12V0Z" fill="black" />
-                    <path d="M6 12H3V15H6V12Z" fill="black" />
-                    <path d="M9 15H6V18H9V15Z" fill="black" />
-                    <path d="M12 18H9V21H12V18Z" fill="black" />
-                    <path d="M21 0H24V3H21V0Z" fill="black" />
-                    <path d="M18 0H21V3H18V0Z" fill="black" />
-                    <path d="M24 3H27V6H24V3Z" fill="black" />
-                    <path d="M24 6H27V9H24V6Z" fill="black" />
-                    <path d="M24 9H27V12H24V9Z" fill="black" />
-                    <path d="M15 0H18V3H15V0Z" fill="black" />
-                    <path d="M21 12H24V15H21V12Z" fill="black" />
-                    <path d="M18 15H21V18H18V15Z" fill="black" />
-                    <path d="M15 18H18V21H15V18Z" fill="black" />
-                    <path d="M15 3H12V6H15V3Z" fill="black" />
-                    <path d="M15 21H12V24H15V21Z" fill="black" />
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--color-contour)"
+                      />
+
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--animation-fill-color)"
+                    />
                   </svg>
                 </button>
-                <button class="card__like-button">
-                  <p class="button__text">Like</p>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
@@ -381,8 +439,12 @@
           <article class="card">
             <h2 class="card__title">3 спринт: Когда опускаются руки</h2>
             <div class="card__img-block">
-              <img src="./images/image2.png" alt="" class="card__img" />
-              <span class="card__label">&lt;/HTML&gt;</span>
+              <img
+                src="./images/absolutecinema.jpg"
+                alt="absolutecinema"
+                class="card__img"
+              />
+              <span class="card__label">absolute cinema</span>
             </div>
             <div class="card__description-block">
               <p class="card__description-text">
@@ -393,42 +455,50 @@
                 откуда вы её черпали.
               </p>
               <p class="card__description-text">
-                Место для ваших воспоминаний об окончании третьего спринта.
+                К началу 3 спринта визуал совместного проекта был готов, в нем я
+                разобрался с гридами, что свело сложность проектной работы с
+                адаптивом к минимуму. К тому же сам адаптив оказался не таким
+                сложным.
               </p>
 
               <div class="card__button-block">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
-                    width="27"
-                    height="24"
-                    viewBox="0 0 27 24"
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M6 0H3V3H6V0Z" fill="black" />
-                    <path d="M9 0H6V3H9V0Z" fill="black" />
-                    <path d="M3 3H0V6H3V3Z" fill="black" />
-                    <path d="M3 6H0V9H3V6Z" fill="black" />
-                    <path d="M3 9H0V12H3V9Z" fill="black" />
-                    <path d="M12 0H9V3H12V0Z" fill="black" />
-                    <path d="M6 12H3V15H6V12Z" fill="black" />
-                    <path d="M9 15H6V18H9V15Z" fill="black" />
-                    <path d="M12 18H9V21H12V18Z" fill="black" />
-                    <path d="M21 0H24V3H21V0Z" fill="black" />
-                    <path d="M18 0H21V3H18V0Z" fill="black" />
-                    <path d="M24 3H27V6H24V3Z" fill="black" />
-                    <path d="M24 6H27V9H24V6Z" fill="black" />
-                    <path d="M24 9H27V12H24V9Z" fill="black" />
-                    <path d="M15 0H18V3H15V0Z" fill="black" />
-                    <path d="M21 12H24V15H21V12Z" fill="black" />
-                    <path d="M18 15H21V18H18V15Z" fill="black" />
-                    <path d="M15 18H18V21H15V18Z" fill="black" />
-                    <path d="M15 3H12V6H15V3Z" fill="black" />
-                    <path d="M15 21H12V24H15V21Z" fill="black" />
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--color-contour)"
+                      />
+
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--animation-fill-color)"
+                    />
                   </svg>
                 </button>
-                <button class="card__like-button">
-                  <p class="button__text">Like</p>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
@@ -438,8 +508,12 @@
           <article class="card">
             <h2 class="card__title">«Сейчас я здесь»</h2>
             <div class="card__img-block">
-              <img src="./images/image2.png" alt="" class="card__img" />
-              <span class="card__label">&lt;/HTML&gt;</span>
+              <img
+                src="./images/happyend.jpg"
+                alt="happyend"
+                class="card__img happy-end"
+              />
+              <span class="card__label">happy end</span>
             </div>
             <div class="card__description-block">
               <p class="card__description-text">
@@ -451,53 +525,85 @@
                 процесс познания. Ведь часто путь — и есть результат.
               </p>
               <p class="card__description-text">
-                Место, чтобы остановиться, подумать и написать, что вы
-                чувствуете в этой точке пути.
+                Жду не дождусь начало модуля по javascript, а пока чуствую
+                расслабление и радость в связи с окончанием модуля верстки.
               </p>
 
               <div class="card__button-block">
-                <button class="card__icon-button">
+                <button class="card__icon-button" type="button">
                   <svg
-                    width="27"
-                    height="24"
-                    viewBox="0 0 27 24"
+                    class="like-icon"
+                    width="39"
+                    height="36"
+                    viewBox="0 0 39 36"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                   >
-                    <path d="M6 0H3V3H6V0Z" fill="black" />
-                    <path d="M9 0H6V3H9V0Z" fill="black" />
-                    <path d="M3 3H0V6H3V3Z" fill="black" />
-                    <path d="M3 6H0V9H3V6Z" fill="black" />
-                    <path d="M3 9H0V12H3V9Z" fill="black" />
-                    <path d="M12 0H9V3H12V0Z" fill="black" />
-                    <path d="M6 12H3V15H6V12Z" fill="black" />
-                    <path d="M9 15H6V18H9V15Z" fill="black" />
-                    <path d="M12 18H9V21H12V18Z" fill="black" />
-                    <path d="M21 0H24V3H21V0Z" fill="black" />
-                    <path d="M18 0H21V3H18V0Z" fill="black" />
-                    <path d="M24 3H27V6H24V3Z" fill="black" />
-                    <path d="M24 6H27V9H24V6Z" fill="black" />
-                    <path d="M24 9H27V12H24V9Z" fill="black" />
-                    <path d="M15 0H18V3H15V0Z" fill="black" />
-                    <path d="M21 12H24V15H21V12Z" fill="black" />
-                    <path d="M18 15H21V18H18V15Z" fill="black" />
-                    <path d="M15 18H18V21H15V18Z" fill="black" />
-                    <path d="M15 3H12V6H15V3Z" fill="black" />
-                    <path d="M15 21H12V24H15V21Z" fill="black" />
+                    <g class="heart">
+                      <path
+                        class="contour"
+                        d="M12 6H9V9H12V6ZM15 6H12V9H15V6ZM9 9H6V12H9V9ZM9 12H6V15H9V12ZM9 15H6V18H9V15ZM18 6H15V9H18V6ZM12 18H9V21H12V18ZM15 21H12V24H15V21ZM18 24H15V27H18V24ZM27 6H30V9H27V6ZM24 6H27V9H24V6ZM30 9H33V12H30V9ZM30 12H33V15H30V12ZM30 15H33V18H30V15ZM21 6H24V9H21V6ZM27 18H30V21H27V18ZM24 21H27V24H24V21ZM21 24H24V27H21V24ZM21 27H18V30H21V27ZM21 9H18V12H21V9Z"
+                        fill="var(--color-contour)"
+                      />
+
+                      <path
+                        class="main-body"
+                        d="M12 9H9V12H12V9ZM15 12H12V15H15V12ZM18 9H15V12H18V9ZM12 15H9V18H12V15ZM15 15H12V18H15V15ZM15 18H12V21H15V18ZM18 12H15V15H18V12ZM18 21H15V24H18V21ZM18 18H15V21H18V18ZM27 9H30V12H27V9ZM24 9H27V12H24V9ZM27 12H30V15H27V12ZM24 12H27V15H24V12ZM21 9H24V12H21V9ZM27 15H30V18H27V15ZM24 15H27V18H24V15ZM24 18H27V21H24V18ZM21 12H24V15H21V12ZM21 21H24V24H21V21ZM21 18H24V21H21V18ZM21 21H18V24H21V21ZM21 24H18V27H21V24Z"
+                        fill="transparent"
+                      />
+
+                      <path
+                        class="core"
+                        d="M18 15H15V18H18V15ZM21 15H24V18H21V15ZM21 15H18V18H21V15ZM21 12H18V15H21V12ZM21 18H18V21H21V18Z"
+                        fill="transparent"
+                      />
+                    </g>
+                    <path
+                      class="sparks"
+                      d="M36 13H39V16H36V13ZM27 27H30V30H27V27ZM18 33H21V36H18V33ZM9 27H12V30H9V27ZM24 0H27V3H24V0ZM33 3H36V6H33V3ZM3 3H6V6H3V3ZM12 0H15V3H12V0ZM0 13H3V16H0V13Z"
+                      fill="var(--animation-fill-color)"
+                    />
                   </svg>
                 </button>
-                <button class="card__like-button">
-                  <p class="button__text">Like</p>
+                <button class="button card__like-button" type="button">
+                  <span class="button__text">Like</span>
                 </button>
               </div>
             </div>
           </article>
         </li>
+        <li class="main__item">
+          <button
+            class="button main__block-save"
+            type="button"
+            onclick="window['dialog-id'].showModal()"
+            aria-controls="dialog-id"
+          >
+            <svg width="28" height="28" viewBox="0 0 39 39">
+              <use href="./svg/diskette.svg#diskette"></use>
+            </svg>
+            <span class="button__text"> Сохранить на память </span>
+          </button>
+        </li>
       </ul>
+
+      <dialog class="dialog" id="dialog-id">
+        <div class="main__block-save">
+          <svg width="39" height="39" viewBox="0 0 39 39">
+            <use href="./svg/diskette.svg#diskette"></use>
+          </svg>
+          <span class="button__text"> Вставьте дискету, чтобы продолжить </span>
+        </div>
+        <button
+          class="button button__dialog-lose"
+          type="button"
+          onclick="window['dialog-id'].close()"
+        >
+          <span class="button__text">ок</span>
+        </button>
+      </dialog>
     </main>
-    <svg width="39" height="39" viewBox="0 0 39 39">
-      <use href="./svg/diskette.svg#diskette"></use>
-    </svg>
+
     <script src="./scripts/like.js"></script>
   </body>
 </html>

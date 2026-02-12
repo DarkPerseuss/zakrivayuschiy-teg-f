@@ -1,10 +1,10 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
 
 :root {
-  --font-family-Inter: "Inter-Variable", sans-serif;
-  --font-family-Press: "PressStart2P-Regular", sans-serif;
-  --font-weight-inter-bold: 715;
-  --font-weight-inter-normal: 410;
+  --font-family-main: "Inter-Variable", sans-serif;
+  --font-family-accent: "PressStart2P-Regular", sans-serif;
+  --font-weight-inter-bold: "wght" 715;
+  --font-weight-inter-normal: "wght" 410;
   --gradient: repeating-linear-gradient(to right, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
   repeating-linear-gradient(to bottom, #d3d3d3 0 2px, rgb(211 211 211 / 0) 2px 4px),
   repeating-linear-gradient(to bottom, #e7e7e7 0 0.01%, #1a1a1a 100%);
@@ -14,6 +14,13 @@
   --header-padding-inline: clamp(0.875rem, -6.8053rem + 32.7692vw, 7.53125rem);
   --header-padding-block: clamp(7.5rem, 6.9362rem + 2.4316vw, 8rem);
   --header-title-padding-inline: clamp(3.4375rem, 4.9183rem + -3.3846vw, 4.125rem);
-  --border: 2px solid #000;
+  --accent-color: #000;
+  --border: 2px solid var(--accent-color);
   --color-shadow: rgb(255 255 255 / 0.5);
+  --color-contour: var(--accent-color);
+  --animation-fill-color: #FF0000;
+  --main-color: #ffffff;
+  --font-button: 14px;
+  --font-card-text: 18px;
+  
 }
